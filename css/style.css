@@ -311,8 +311,14 @@ body {
     padding-bottom: 30px;
 }
 
-.social-link {
-    display: block;
+.social-list {
+    display: flex;
+}
+
+.social-list-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
 }
 
 .social-list-svg {
