@@ -90,6 +90,7 @@ body {
 
 .header-email-link,
 .header-tel-link {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -114,25 +115,32 @@ body {
     margin-right: 30px;
 }
 
-.header-email-link {
+.contacts-icon .header-email-link {
     margin-right: 50px;
 }
 
-.contacts-icon {
-    display: inline-block;
+.header-email-link:hover .contacts-icon-mail {
+    fill: var(--accent-color);
+}
 
+.header-tel-link:hover .contacts-icon-tel{
+    fill: var(--accent-color);
 }
 
 .contacts-icon-mail {
+    align-self: center;
     width: 16px;
     height: 12px;
     fill: var(--primary-text-color);
+    margin-right: 10px;
 }
 
 .contacts-icon-tel {
+    align-self: center;
     width: 10px;
     height: 16px;
     fill: var(--primary-text-color);
+    margin-right: 10px;
 }
 
 .order-servise {
@@ -279,7 +287,6 @@ body {
 }
 
 .team-item {
-    padding-bottom: 24px;
     border-radius: 0px 0px 4px 4px;
 }
 .employee-name {
@@ -292,6 +299,7 @@ body {
 }
 
 .employee-position {
+    margin-bottom: 16px;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.188;
@@ -313,12 +321,27 @@ body {
 
 .social-list {
     display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .social-list-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
+    fill: #AFB1B8;
+}
+
+.social-list-link:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.social-list-link:hover .social-list-svg {
+    fill: var(--white-text-color);
 }
 
 .social-list-svg {
@@ -330,24 +353,36 @@ body {
     margin-bottom: 94px;
 }
 
-.our-clients-list {
-    display: flex;
-}
-
-.our-clients-link {
-    height: 90px;
+.clients-list-link {
     width: 170px;
+    height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
-.our-clients-link:not(:last-child) {
+.clients-list {
+    display: flex;
+}
+
+.clients-list-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.icon-logo-1 {
-    height: 50px;
-    width: 44px;
+.clients-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-list-svg {
+    fill: #AFB1B8;
+}
+.clients-list-svg:hover {
+    fill: var(--accent-color);
+}
+
+.clients-list-link:hover {
+    border-color: var(--accent-color);
 }
 
 .page-footer {
@@ -360,6 +395,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-right: 70px;
 }
 
 .contacts-item {
@@ -371,7 +407,56 @@ body {
     margin-bottom: 9px;
 }
 
+.footer {
+    display: flex;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    height: 80px;
+}
+
+.join-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+.footer-social-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-svg {
+    fill: var(--white-text-color);
+    width: 20px;
+    height: 20px;
+}
+
+
+.footer-social-list-link:hover {
+    background-color: var(--accent-color);
+}
+
 .address {
+    display: flex;
+    flex-direction: column;
     font-style: normal;
     color: var(--white-text-color);
     }
