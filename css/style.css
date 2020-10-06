@@ -375,6 +375,12 @@ body {
 }
 
 .clients-list-svg {
+    width: 100%;
+    height: 100%;
+    padding: 23px 40px; 
+}
+
+.clients-list-svg {
     fill: #AFB1B8;
 }
 .clients-list-svg:hover {
